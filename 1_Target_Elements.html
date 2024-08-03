@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+
+
+    <style>
+                    /* Target */
+            div p {
+                font-size: 1.5rem;
+            }
+
+            /* Direct Targer */
+            div > p {
+                background-color: grey;
+            }
+
+            /* Directly After */
+            div + p {
+                background-color: blue;
+            }
+
+            /* By Attribute */
+            a[target]{
+                background-color: red;
+                color: white;
+            }
+
+            /* By Specify the attribute values */
+            input[type='text'],
+            input[type='email']{
+                width: 100%;
+                margin-bottom: 7px;
+            }
+    </style>
+
+
+
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequuntur.</p>
+        <ul>
+            <li>Item 1</li>
+            <li><p>Item 2</p></li>
+            <li>Item 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#">Page 1</a>
+    <a href="#" target="_self">Page 2</a>
+    <a href="https://google.com" target="_blank">Google</a>
+
+
+    <br><br>
+    
+
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
